@@ -103,9 +103,9 @@ export default {
           to: '/'
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
+          icon: 'mdi-clipboard-account-outline',
+          title: 'sign-in',
+          to: '/signin'
         }
       ],
       miniVariant: false,
