@@ -7,7 +7,7 @@
       </v-card>
       <v-card>
         <v-card-title class="headline">
-          WELCOME TO MY WORLD
+          WELCOME fuck you luis
         </v-card-title>
         <v-card-text>
           <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
