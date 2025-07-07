@@ -1,14 +1,18 @@
 <template>
-  <div>
+
+  <div class="d-flex mx-auto justify-center align-center" style="height: 88vh;">
 
    
 
-    <v-card
+    <v-card width="500" 
       class="mx-auto pa-12 pb-8"
       elevation="8"
       max-width="448"
       rounded="lg"
     >
+    <h1>
+
+    </h1>
       <div class="text-subtitle-1">Login</div>
 
       <v-text-field
@@ -47,20 +51,24 @@
         color="blue"
         size="large"
         variant="tonal"
-        block
+        block rounded
       >
         sign-in 
       </v-btn>
 
       <v-card-text class="text-center">
+        <v-btn style="background-color: red; opacity: 90%;" width="30vh" @click="signInWithGoogle()" block rounded>
         <a
           class="text-blue text-decoration-none"
           href="#"
           rel="noopener noreferrer"
           target="_blank"
+          style="color: white;"
+          
         >
-          Sign up now <v-icon icon="mdi-chevron-right"></v-icon>
+          Sign in with Google <v-icon icon="mdi-chevron-right"></v-icon>
         </a>
+        </v-btn>
       </v-card-text>
     </v-card>
   </div>
@@ -71,3 +79,21 @@
 margin-left: 150px;
 }
 </style>
+
+<script>
+export default {
+  layout: "auth",
+  middleware: ['auth'],
+  methods: {
+    signInWithGoogle(){
+      this.$auth.loginWith('google')
+    }
+
+  }
+
+
+
+
+}
+
+</script>
