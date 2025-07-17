@@ -57,13 +57,14 @@
       </v-btn>
 
       <v-card-text class="text-center">
-        <v-btn style="background-color: red; opacity: 90%;" width="30vh" @click="signInWithGoogle()" block rounded>
+        <v-btn style="background-color: red; opacity: 90%;" width="10vh" @click="signInWithGoogle()" block rounded>
         <a
           class="text-blue text-decoration-none"
           href="#"
           rel="noopener noreferrer"
           target="_blank"
           style="color: white;"
+          
           
         >
           Sign in with Google <v-icon icon="mdi-chevron-right"></v-icon>

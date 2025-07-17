@@ -110,7 +110,11 @@ export default {
           icon: 'mdi-clipboard-account-outline',
           title: 'sign-in',
           to: '/auth/signin'
-        }
+        },{
+          icon: 'mdi-qrcode',
+          title: 'QR_scanner',
+          to: '/Qr_scan'
+        },
       ],
       miniVariant: false,
       right: true,
